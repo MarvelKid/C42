@@ -162,7 +162,12 @@ function handleGameover(bubbleGroup){
           "https://cdn.shopify.com/s/files/1/1061/1924/products/Thumbs_Down_Sign_Emoji_Icon_ios10_grande.png",
         imageSize: "100x100",
         confirmButtonText: "Thanks For Playing"
-      });
+      },
+      function(isConfirm){
+        if(isConfirm){
+         location.reload()
+      }
+    });
     }
   
 }
